@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Rooms = () => {
+export default function Rooms() {
   return (
     <div>
-      
+      hello from rooms page
     </div>
   )
 }

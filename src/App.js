@@ -1,10 +1,20 @@
 import React from 'react';
-//import logo from './logo.svg';
-//import './App.css';
+import "./App.css";
+
+// import components
+import Home from "./pages/Home"
+import Rooms from "./pages/Rooms"
+import SingleRooms from "./pages/SingleRooms"
+import Error from "./pages/Error"
 
 function App() {
   return (
-    <>Hello from app</>
+    <>
+      <Home></Home>
+      <Rooms></Rooms>
+      <SingleRooms></SingleRooms>
+      <Error></Error>
+    </>
   );
 }
 
