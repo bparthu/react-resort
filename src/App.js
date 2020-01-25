@@ -1,6 +1,6 @@
 import React from 'react';
 import "./App.css";
-
+import {Route, Switch} from 'react-router-dom';
 // import components
 import Home from "./pages/Home"
 import Rooms from "./pages/Rooms"
@@ -10,10 +10,13 @@ import Error from "./pages/Error"
 function App() {
   return (
     <>
-      <Home></Home>
-      <Rooms></Rooms>
-      <SingleRooms></SingleRooms>
-      <Error></Error>
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/rooms" component={Rooms} />
+      <Route exact path="/rooms/:slug" component={SingleRooms} />
+      <Route component={Error} />
+    </Switch>
+      
     </>
   );
 }
